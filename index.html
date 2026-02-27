@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS S3 Tutorial - Complete Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AWS S3 Tutorial</h1>
+            <p class="subtitle">Master Amazon Simple Storage Service - Key Concepts & Hands-On Guide</p>
+        </header>
+
+        <div class="folders">
+            <div class="folder" data-folder="basics">
+                <div class="folder-icon">📁</div>
+                <h3>01 Basics</h3>
+                <p>Buckets, Objects & Storage Classes</p>
+            </div>
+            <div class="folder" data-folder="advanced">
+                <div class="folder-icon">⚙️</div>
+                <h3>02 Advanced</h3>
+                <p>Versioning, Lifecycle Policies & Security</p>
+            </div>
+            <div class="folder" data-folder="deploy">
+                <div class="folder-icon">🌐</div>
+                <h3>03 Deploy</h3>
+                <p>Static Website Hosting Guide</p>
+            </div>
+        </div>
+
+        <section class="concepts">
+            <h2>Core S3 Concepts</h2>
+            <div class="concept-grid" id="concepts-grid">
+                <div class="concept-card">
+                    <h3>🗂️ Buckets & Objects</h3>
+                    <p>Buckets act as root-level containers for objects (files + metadata). Globally unique names, flat namespace.[web:1][web:17]</p>
+                </div>
+                <div class="concept-card">
+                    <h3>💾 Storage Classes</h3>
+                    <p>Standard, IA, Intelligent-Tiering, Glacier. Choose based on access frequency to optimize costs.[web:1]</p>
+                </div>
+                <div class="concept-card">
+                    <h3>📈 Versioning</h3>
+                    <p>Keep multiple versions of objects. Protects against accidental deletes/overwrites. Enable per bucket.[web:13][web:11]</p>
+                </div>
+                <div class="concept-card">
+                    <h3>🔄 Lifecycle Policies</h3>
+                    <p>Automate transitions to cheaper storage or expiration. Works with versioning for non-current versions.[web:2][web:6]</p>
+                </div>
+                <div class="concept-card">
+                    <h3>🔒 Security Best Practices</h3>
+                    <p>IAM policies, bucket policies, Block Public Access, least privilege, encryption.[web:3][web:12]</p>
+                </div>
+                <div class="concept-card">
+                    <h3>🌐 Static Hosting</h3>
+                    <p>Host HTML/CSS/JS sites directly from S3 buckets. Cost-effective for static content.[web:4][web:8]</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hosting-steps">
+            <h2>Deploy This Site to S3</h2>
+            <p>Follow these steps to host this tutorial as a static website on AWS S3 [web:4][web:15].</p>
+            <ol>
+                <li>Create S3 bucket with unique name (e.g., my-s3-tutorial-2026).</li>
+                <li>Enable Static Website Hosting (index.html, error.html).</li>
+                <li>Edit Block Public Access (disable for public read).</li>
+                <li>Add bucket policy for public read access.</li>
+                <li>Upload entire folder structure to S3.</li>
+                <li>Access via bucket website endpoint![web:8]</li>
+            </ol>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AWS S3 Learning Hub | Deployed on S3</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
